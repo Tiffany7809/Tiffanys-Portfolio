@@ -1,3 +1,45 @@
 .header {
     background-color: darkgreen;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    color: greenyellow;
+    flex-direction: row;
+    display: flex;
+
+}
+
+.navigation {
+    display: flex;
+
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+footer {
+    display: flex;
+    background-color: darkgreen;
+}
+
+li {
+    color: aqua;
+}
+
+.About {
+    color: aqua;
+}
+
+.Contact {
+    color:aqua
+}
+
+.Work{
+    color:aqua
 }
