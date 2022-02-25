@@ -3,39 +3,26 @@
     display: flex;
     flex-direction: row;
     color: rgb(255, 255, 255);
-}
-
-.title {
-    color: rgb(255, 255, 255);
-    flex-direction: row;
-    display: flex;
-
-}
-
-.navigation {
-    display: flex;
-    justify-content: flex-end;
-
+    width: 100%;
+    justify-content: space-between;
 }
 
 body {
     background-color: black;
 }
+ 
 
 .selfie {
-    display: flex;
-    justify-content: flex-start;
     width: 200px;
     height: auto;
 }
 
 main {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
-
+/*card styles */
 .card {
     background-color: rgb(46, 45, 46);
     flex: 1 0 200px;
@@ -45,14 +32,53 @@ main {
     border-color: antiquewhite;
     border-width: 10px;
     width: auto;
-
 }
+
 .card header {
     padding: 30px;
-    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    font-family: fantasy;
-    font-size: 30px
+    font-family: serif;
+    font-size: 50px;
+    font-style: italic;
+    
+}
+ /*styles for my work card */
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: antiquewhite;
+}
+
+.project1, .project2, .project3, .project4, .project5 {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+
+.project1img {
+    width: 75%;
+    height: 10%;
+}
+
+.project2img {
+    width: 75%;
+    height: 10%;
+}
+
+.project3img {
+    width: 75%;
+    height: 10%;
+}
+
+.project4img {
+    width: 75%;
+    height: 10%;
+}
+
+.project5img {
+    width: 75%;
+    height: 10%;
 }
 
 footer {
@@ -65,4 +91,5 @@ article {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
+
+} 
