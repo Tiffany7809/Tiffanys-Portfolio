@@ -1,95 +1,97 @@
 .header {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(90, 74, 74);
     display: flex;
     flex-direction: row;
     color: rgb(255, 255, 255);
     width: 100%;
     justify-content: space-between;
+    font-size: large;
+}
+
+header {
+    font-size: 300%;
+    justify-content: baseline;
 }
 
 body {
     background-color: black;
 }
  
-
 .selfie {
     width: 200px;
     height: auto;
+    justify-content: center;
 }
 
 main {
     display: flex;
     flex-direction: column; 
+    flex-wrap: wrap;
 }
 
+.aboutme {
+    display: flex;
+    background-color: black;
+    color: antiquewhite;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mywork {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.contact {
+    background-color: rgb(22, 31, 31);
+    color: antiquewhite;
+}
 /*card styles */
 .card {
+    display: flex;
     background-color: rgb(46, 45, 46);
-    flex: 1 0 200px;
     padding: 5%;
-    text-align: center;
     border-style: solid;
     border-color: antiquewhite;
-    border-width: 10px;
-    width: auto;
+    flex-direction: column;
+    flex: 1 0 200px ;
+}
+.card img {
+    width: 100%;
 }
 
-.card header {
-    padding: 30px;
+.card h2 {
+    background-color: black;
+    padding: 10px;
+}
+.mywork header {
     color: rgb(255, 255, 255);
     font-family: serif;
     font-size: 50px;
-    font-style: italic;
-    
+    font-style: italic;  
 }
- /*styles for my work card */
+
+
 h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     color: antiquewhite;
-}
-
-.project1, .project2, .project3, .project4, .project5 {
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: baseline;
 }
 
-.project1img {
-    width: 75%;
-    height: 10%;
-}
-
-.project2img {
-    width: 75%;
-    height: 10%;
-}
-
-.project3img {
-    width: 75%;
-    height: 10%;
-}
-
-.project4img {
-    width: 75%;
-    height: 10%;
-}
-
-.project5img {
-    width: 75%;
-    height: 10%;
-}
 
 footer {
     display: flex;
     background-color: rgb(0, 0, 0);
     color: beige;
 }
-
-article {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
-} 
