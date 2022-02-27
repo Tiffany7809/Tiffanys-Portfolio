@@ -44,6 +44,8 @@ header {
     position: absolute;
     left: 5%;
     text-decoration: underline;
+    font-style: italic;  
+
 
 }
 /*Navigation*/
@@ -57,21 +59,20 @@ nav {
 }
 
 button {
-    background-color: gray;
+    background-color: rgb(196, 196, 196);
     margin-left: 30%;
     margin-right: 30%;
     padding: 3%;
     right: 50%;
     position: relative;
     width: 200px;
+    border-radius: 50px;
 }
 
 /*About me Section*/
 
 #aboutme {
     display: flex;
-    background-color: black;
-    color: antiquewhite;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -83,26 +84,13 @@ button {
     justify-content: center;
     margin: 5%;
     border: 10px;
-    border-color: rgb(231, 178, 255);
-    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-style: dashed;
     position: relative;
     top: 25px;
 }
 
-/*.about {    
-    margin: 1%;
-    justify-content: center;
-}*/
-
-
-
  /*my work section with cards*/
-#mywork header {
-    color: rgb(255, 255, 255);
-    font-family: serif;
-    font-size: 50px;
-    font-style: italic;  
-}
 
  #mywork {
     display: flex;
@@ -121,15 +109,14 @@ button {
     justify-content: center;
     flex: 1 0 200px ;
     background-color:rgb(162, 157, 165);
-    padding: 5%;
     border-style: solid;
     border-color: antiquewhite;
-    width: 30%;
-    
+    width: 33%;  
 }
 
+
 .card h2 {
-    padding: 5%;
+    padding: 1%;
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
@@ -170,7 +157,9 @@ li {
 }
 
 footer {
+    border-bottom: whitesmoke dashed 5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
