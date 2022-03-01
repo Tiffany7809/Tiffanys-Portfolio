@@ -157,11 +157,14 @@ li {
 
 }
 
-    @media screen and (max-width:1080px) 
+    @media screen and (max-width:1025px) {
+        {
+
+        }
     }
 
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 768px) {
     main, section {
         display:flex;
         flex-direction: column;
@@ -207,7 +210,9 @@ li {
 
   }
 
-  @media screen and (max-width: 600px) {
+
+  /* break point for mobile devices */
+  @media screen and (max-width: 480px) {
    main, section {
         display:flex;
         flex-direction: column;
@@ -215,45 +220,73 @@ li {
         justify-content: center;
         align-items: center;
     }
-    nav {
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        height: 5%;
-        width: 5%;
-        justify-content: center;
-        margin-right: 10%;
-
-    }
-    .selfie {
-        margin-top: 50%;
-        margin-left: 5%;
-    }
-
-    #aboutme {
+    .Title {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-        margin-left: 50%;
-        /*margin-right: 30%;*/
+        flex: 1 0 100%;
+        width: 100%;
+        font-size: 100%;
+        margin-left: 0;
     }
+
+    nav {
+        width: 25%;
+    }
+    button {
+        justify-content: center;
+        flex-direction: column;
+        padding: 3%;
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .selfie {
+        margin-top: 4%;
+        
+    }
+    .aboutme {
+        margin-bottom: 150%;
+        padding: 5%;
+    }
+    #aboutme {
+        margin-top: 35%;
+        padding: 5%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #mywork {
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        border-left: none;
+        margin: 0;
+        flex-direction: column;
+        border-bottom: pink solid 1%;
+        
+    }
+    
 
     .card {
         display: flex;
+        margin-left: 0%;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 100%;
+        width: 50%;
         height: auto;
-        margin-left: 40%;
         flex: 1 0 100%;
     }
 
-    header {
-        display: flex;
-        justify-content: center;
-        justify-content: space-between;
-         font-size: 150%;
+    .mywork {
+        position: absolute;
+        margin-bottom: 160%;
+        text-align: center;
+        justify-content: flex-start;
+
     }
     
     #contact ul {
