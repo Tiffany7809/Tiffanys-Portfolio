@@ -253,15 +253,10 @@ li {
     .contact {
         position: relative;
         margin-bottom: 10%;
-        justify-content: flex-start;
     }
     #contact ul {
-        display: flex;
         flex-direction: column;
-        margin: 3%;
-        justify-content: center;
-        position: relative;
-
+        align-items: center;
     }
 
 
