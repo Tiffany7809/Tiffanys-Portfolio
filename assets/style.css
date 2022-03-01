@@ -97,6 +97,7 @@ button {
 }
 
 .card {
+    margin-top: 30%;
     flex:1;
     padding: 5%;
     border-style: solid;
@@ -163,41 +164,17 @@ li {
         }
     }
 
+/*breakpoint fpr tablets*/
 
   @media screen and (max-width: 768px) {
-    main, section {
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    nav {
-        display:flex;
-        flex-direction: row;
-        margin: 1%;
-    }
-    .selfie {
-        margin-top: 70%;
-    }
-
-    #aboutme {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 30%;
-    }
-
-    .card {
-        flex-wrap: wrap;
-        width: 150%;
-        margin-left: 50%;
-    }
-
-    header {
-        font-size: 150%;
-    }
+   #aboutme {
+       padding-top: 10%;
+   }
     
+   #mywork {
+       padding-top:10%;
+       width: 50%;
+   }
     #contact ul {
         display: flex;
         flex-wrap: wrap;
@@ -206,8 +183,6 @@ li {
         justify-content: space-evenly;
         position: relative;
     }
-
-
   }
 
 
@@ -220,32 +195,20 @@ li {
         justify-content: center;
         align-items: center;
     }
-    .Title {
-        flex-direction: column;
-        flex: 1 0 100%;
-        width: 100%;
-        font-size: 100%;
-        margin-left: 0;
-    }
-
     nav {
-        width: 25%;
+        width: 30%
     }
     button {
-        justify-content: center;
-        flex-direction: column;
-        padding: 3%;
-        width: 30px;
-        height: 30px;
-
+        flex-direction: row;
+        padding: 1%;
+        width: 60px;
+        height: 60px;
     }
-
     .selfie {
-        margin-top: 4%;
-        
+        margin-top: 40%; 
     }
     .aboutme {
-        margin-bottom: 150%;
+        margin-bottom: 140%;
         padding: 5%;
     }
     #aboutme {
@@ -259,6 +222,12 @@ li {
         margin-right: 0;
     }
 
+    .mywork {
+        position: absolute;
+        margin-bottom: 190%;
+        justify-content: flex-start;
+
+    }
     #mywork {
         justify-content: center;
         width: 50%;
@@ -281,14 +250,11 @@ li {
         flex: 1 0 100%;
     }
 
-    .mywork {
-        position: absolute;
-        margin-bottom: 160%;
-        text-align: center;
+    .contact {
+        position: relative;
+        margin-bottom: 10%;
         justify-content: flex-start;
-
     }
-    
     #contact ul {
         display: flex;
         flex-direction: column;
