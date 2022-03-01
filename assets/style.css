@@ -5,13 +5,13 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
     line-height: 1.5;
+    
 }
 
 
 body {
-    flex-wrap: wrap;
+    /*flex-wrap: wrap; */
     flex-direction: column;
-    flex: 1 0 100%;
     background-color: black;
 }
 
@@ -19,6 +19,7 @@ body {
 .Title {
     display: flex; 
     flex-direction: row;
+    flex: 1 0 100%;
     width: 100%;
     font-size: 100%;
     left: 0%; 
@@ -44,6 +45,7 @@ header {
 /*Navigation*/
 
 button {
+    flex: 1 0 100%;
     flex-direction: row;
     background-color: rgb(117, 113, 113);
     padding: 3%;
@@ -64,6 +66,7 @@ button {
 }
 
 .selfie {
+    flex: 1 0 100%;
     width: 200px;
     justify-content: center;
     margin-top: 8%;
@@ -75,79 +78,48 @@ button {
 
  /*my work section with cards*/
  #mywork {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 50%;
+    width: 60%;
     height: 100vh;
     margin: 0 auto;
     border-left: pink 10px solid;
-    justify-content: center;
 }
+
 
 /*card styles */
-a {
-    display: grid;
-    flex-wrap: wrap; 
-    flex-direction: column;
-    justify-content: baseline; 
-    align-items: center; 
-    width: 50%;
-    height: auto;
-    padding: 1%;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px auto;
+    max-width: 100%;
 
 }
 
-
-.card1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex: 2 0 200px ;
+.card {
+    flex:1;
+    padding: 5%;
     border-style: solid;
     border-color: antiquewhite;
-    width: 200%;  
     border-radius: 50%;
-    box-shadow: 0px 0px 20px;
-    background-image: url("./images/project1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 3%;
-    
-}
-
-.card2, .card3, .card4, .card5  {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex: 2 0 200px ;
-    border-style: solid;
-    border-color: antiquewhite;
-    width: 60%;  
-    border-radius: 50%;
+    margin: 2%;
     box-shadow: 0px 0px 20px;
     background-image: url("./images/project2.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 3%;
-    
+    width: 50%;
 }
+
 
 
 h2 {
-    color: gray;
+    color: rgb(0, 0, 0);
     align-items: center;
     margin: 10%; 
     padding: 5%; 
-    width: 50%;
+    width: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     text-decoration: underline;
-    background-color: pink;
     border-radius: 50%;
 }
 
@@ -172,6 +144,7 @@ ul {
 }
  
 li {
+   
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -184,9 +157,11 @@ li {
 
 }
 
+    @media screen and (max-width:1080px) 
+    }
 
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 820px) {
     main, section {
         display:flex;
         flex-direction: column;
@@ -199,7 +174,7 @@ li {
         margin: 1%;
     }
     .selfie {
-        margin-top: 30%;
+        margin-top: 70%;
     }
 
     #aboutme {
@@ -210,7 +185,7 @@ li {
         margin-left: 30%;
     }
 
-    .card1, .card2, .card3, .card4, .card5 {
+    .card {
         flex-wrap: wrap;
         width: 150%;
         margin-left: 50%;
@@ -225,49 +200,69 @@ li {
         flex-wrap: wrap;
         flex-direction: column;
         margin:3%;
-        justify-content: center;
+        justify-content: space-evenly;
+        position: relative;
     }
 
 
   }
 
-  @media screen and (max-width: 567px) {
+  @media screen and (max-width: 600px) {
    main, section {
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
     nav {
         display:flex;
         flex-direction: row;
-        margin: 1%;
+        justify-content: center;
+        height: 5%;
+        width: 5%;
+        justify-content: center;
+        margin-right: 10%;
+
     }
     .selfie {
-        margin-top: 40%;
+        margin-top: 50%;
+        margin-left: 5%;
     }
 
     #aboutme {
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        margin-left: 30%;
+        text-align: left;
+        margin-left: 50%;
+        /*margin-right: 30%;*/
     }
 
-    .card1, .card2, .card3, .card4, .card5 {
-        width: 210%;
-        margin-left: 50%;
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-left: 40%;
+        flex: 1 0 100%;
     }
 
     header {
-        font-size: 150%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+         font-size: 150%;
     }
     
     #contact ul {
         display: flex;
         flex-direction: column;
-        margin:3%;
+        margin: 3%;
         justify-content: center;
+        position: relative;
+
     }
 
 
