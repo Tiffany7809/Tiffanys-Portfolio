@@ -58,18 +58,13 @@ button {
 
 /*About me Section*/
 #aboutme {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
     
 }
 
 .selfie {
-    flex: 1 0 100%;
-    width: 200px;
-    justify-content: center;
-    margin-top: 8%;
+    width: 200px; 
+    height:auto;
     border: 10px;
     border-color: rgb(255, 255, 255);
     border-style: dashed;
@@ -123,37 +118,21 @@ h2 {
 
 /*contact section*/
 #contact { 
-    flex-direction: row;
     height: 200%;
-    margin: 10px 10px 10px 10px;
-    padding: 3%;
     border-top: pink solid 10px;
     
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: right;
-    align-items: center;
-    right: 5%;
-    margin: 10;
-}
  
-li {
-   
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin-left: 20%; 
-    margin-right: 20%;
-    bottom: 20px;
+.contactL {
+    text-align: center;
     border: pink solid 1px;
     border-radius: 50%;
     padding: 10px;
+    margin:2px;
 
 }
+
 /*breakpoint for laptops*/
     @media screen and (max-width:1025px) {
     .selfie {
