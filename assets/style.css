@@ -86,12 +86,19 @@ button {
     
 }
 
+.link{
+    color:black;
+    font-size: 150%;
+    
+}
+
+.img{
+    width: 350px;
+}
 
 h2 {
     color: rgb(0, 0, 0);
     align-items: center;
-    margin: 10%; 
-    padding: 5%; 
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
