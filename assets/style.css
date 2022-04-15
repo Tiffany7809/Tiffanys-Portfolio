@@ -83,8 +83,15 @@ button {
     max-width: 70%;
     min-width: 35%;
     text-align: center;
-    margin: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     
+}
+
+#mainProject{
+    margin-left: 15%;
 }
 
 .link{
