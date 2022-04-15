@@ -76,7 +76,7 @@ button {
     padding: 5%;
     border-style: solid;
     border-color: antiquewhite;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0px 0px 20px;
     background-image: url("./images/project2.jpg");
     background-size: cover;
