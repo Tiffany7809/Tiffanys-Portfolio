@@ -96,6 +96,10 @@ header {
     margin-left: 100px;
 }
 
+#myWork {
+    margin-left: 110px;
+}
+
 .link{
     color:var(--font-color-drk);
     font-size: 150%;
