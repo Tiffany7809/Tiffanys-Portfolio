@@ -17,11 +17,12 @@ This web page was a challenge for me, learning FlexBox was the most confusing pa
 I still need more practice with FlexBox, but am becoming more comfertable with it.
 I really enjoyed playing with the layout, colors, and effects I learned in the class so far. 
 
-![Screenshot (26)](https://user-images.githubusercontent.com/97773921/163659638-672b4686-61c2-4c8e-8d0c-dad2776a45ff.png)
+![profilepageupdate1](https://user-images.githubusercontent.com/97773921/174424979-9124f823-dd91-403a-aeba-3f9e02f88d39.png)
 
-![Screenshot (27)](https://user-images.githubusercontent.com/97773921/163659645-48a2d65f-53c5-4595-998a-7af87ebbf196.png)
+![profilepageupdate2](https://user-images.githubusercontent.com/97773921/174424986-532ca786-8cc1-457b-8d57-42f63f629866.png)
 
-![Screenshot (28)](https://user-images.githubusercontent.com/97773921/163659650-69f91981-1afc-4034-8e44-3d02e2b311e7.png)
+![profilepageupdate3](https://user-images.githubusercontent.com/97773921/174424994-b52086f2-de6a-41ba-9bec-5bf72557414d.png)
+
 
 https://tiffany7809.github.io/Tiffanys-Portfolio/
 
