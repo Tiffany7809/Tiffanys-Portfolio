@@ -1,9 +1,9 @@
 :root {
     --main-background: black;
-    --buttons: pink;
+    --buttons: #A883BA;
     --font-color-light: white;
-    --font-color-drk:black;
-    --border-color:white;
+    --font-color-drk:#5A3E51;
+    --border-color:#D9DAFF;
 
 
 }
@@ -83,7 +83,7 @@ header {
     border-color: var(--border-color);
     border-radius: 50px;
     box-shadow: 0px 0px 10px;
-    background-image: url("./images/project2.jpg");
+    background-image: url("./images/purple.jpg");
     background-size: cover;
     max-width: 70%;
     min-width: 35%;
