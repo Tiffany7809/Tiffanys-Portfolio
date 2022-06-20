@@ -1,4 +1,23 @@
 :root {
+    --background-animate: linear-gradient(
+        45deg,
+        rgb(24, 1, 22),
+        rgb(51, 1, 48),
+        rgb(78, 0, 74),
+        rgb(214, 150, 243),
+        rgb(78, 0, 74),
+        rgb(51, 1, 48),
+        rgb(24, 1, 22)
+    );
+    --selfie-border: linear-gradient(
+        45deg,
+        gray,
+        pink,
+        purple
+
+    );
+
+  
     --main-background: black;
     --buttons: #A883BA;
     --font-color-light: white;
@@ -18,14 +37,30 @@
 }
 
 body {
-    /*flex-wrap: wrap; */
     flex-direction: column;
-    background-color: var(--main-background);
+    background: var(--main-background);
+  
 }
+
+
 
 /*styles for the main heading*/
 .Title {
-    background-image: url("./images/headerbackground.jpg");
+    background-image: var(--background-animate);
+    background-size: 300%;
+    animation: bg-animation 30s infinite;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
 }
 
 h1 {
@@ -50,6 +85,10 @@ header {
     border: var(--border-color) 5px solid;
 }
 
+.btn:hover {
+    background-color:rgb(187, 183, 183);
+}
+
 /* left side with section titles */
 .titleBar {
     border-right: var(--border-color) 3px solid;
@@ -71,18 +110,55 @@ header {
 .selfie {
     width: 200px; 
     height:auto;
-    border: var(--border-color) 5px dashed;
+    border:transparent 10px solid;
+    border-image: var(--selfie-border);
+    border-image-slice: 1;
 }
+
+.selfie:hover {
+  animation: selfie-animate 1s infinite;
+}
+
+@keyframes selfie-animate {
+    0% {
+        transform:rotate(0deg);
+    }
+    15%{
+        transform:rotate(5deg);
+    }
+    30%
+    {
+        transform:rotate(10deg);
+    }
+    45% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    90%{
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+
+}
+
+
 
 /*card styles */
 
 
 .card {
-    padding: 5%;
+    padding: 1%;
     border-style: solid;
     border-color: var(--border-color);
     border-radius: 50px;
-    box-shadow: 0px 0px 10px;
+    box-shadow: 0px 0px 5px;
     background-image: url("./images/purple.jpg");
     background-size: cover;
     max-width: 70%;
@@ -91,6 +167,13 @@ header {
     margin: 10px 5px 5px 5px;
     
 }
+
+.card:hover {
+    background: hsl(278, 86%, 78%);
+   
+}
+
+
 
 #mainProject{
     margin-left: 100px;
@@ -109,14 +192,13 @@ header {
     width: 75%;
 }
 
+
 h2 {
     color: var(--font-color-drk);
     align-items: center;
     width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    text-decoration: underline;
-    border-radius: 50%;
+    font-family: 'Suez One', serif;
+    font-size: 40px;
 }
 
 /*contact section*/
